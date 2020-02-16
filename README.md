@@ -1,17 +1,4 @@
-# README
-
-This is the url linked to our site:
-
-http://ec2-54-157-25-173.compute-1.amazonaws.com/~Joey/module5/calendar.html
-
-Group Members:
-
-Da Lin 466982
-
-Feifan Liu 467573
-
-# New Features
-There are mainly four new features assoicated with small functions:
+Except for basic calendar function, there are mainly four new features assoicated with small functions:
 
 - Event Tags
 
