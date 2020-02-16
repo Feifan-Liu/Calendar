@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Calendar </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="calendar.min.js"></script>
+	<script src="popupDialog.js"></script>
+	<script src="updateCalendar.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+	<input type="hidden" id="eventTag" />
+	<input type="hidden" id="eventid" />
+	<input type="hidden" id="date" />
+	<input type="hidden" id="month" />
+	<input type="hidden" id="token" />
+	<div class="container">
+		<p id="hello"></p>
+		<div id="login">
+			<p class="errormsg" id="errormsg"></p>
+			<input class="userinput" type="text" id="username" placeholder="Username" />
+			<input class="userinput" type="password" id="password" placeholder="Password" />
+			<button id="login_btn">Log In</button><br>
+		</div>
+		<div id="register">
+			<input class="userinput" type="text" id="username_reg" placeholder="Username" />
+			<input class="userinput" type="password" id="password_reg" placeholder="Password" />
+			<button id="register_btn">register</button><br>
+		</div>
+		<button id="logout_btn">Log Out</button><br>
+	</div>
+	<div id="tagsboxes" class="container">
+		Tags:
+		<div id="tag_box_div"></div>
+		<div id="panel">
+			<input class="userinput" type="text" id="newtag" />
+			<button id="addtag_btn">Add</button>
+		</div>
+	</div>
+	<div id="shared_calendar" class="container">
+		<div>
+			<button id="share_btn">Click to share your calender with</button>
+			<select id='user_options'>
+			</select>
+		</div>
+		Otherone's calendar shared with you:
+		<div id="others_calendar_div"></div>
+	</div>
+	<div id="group_event_container" class="container">
+		<div>
+			Group Events:
+		</div>
+		<div id="group_event"></div>
+	</div>
+
+	<div class="stack" id="stack">
+		<div class="month">
+			<ul>
+				<li class="prev" id="prev_month">&#10094;</li>
+				<li class="next" id="next_mobth">&#10095;</li>
+				<li id="title"></li>
+			</ul>
+		</div>
+		<div class="calendar" id="calendar"></div>
+	</div>
+	<div id="dialog-form" title="Event">
+		<form>
+			<fieldset>
+				<p class="validateTips" id="tips"></p>
+				<div id='shareEvent'>
+					<span id='clickToShare' class='clickToShare'>Click here to share this event with</span>
+					<select id='selectOptions'>
+					</select>
+				</div>
+				<br />
+				<label for="time">time</label>
+				<input type="time" id="time" class="text ui-widget-content ui-corner-all" required>
+				<br /><label for="content">Content</label>
+				<br /><textarea rows="8" cols="34" id="content" class="text ui-widget-content ui-corner-all"></textarea>
+				<br />Tag:<select id="tags"></select>
+				<div id='groupEvent' class="groupEvent">
+					Create group events. Choose users:
+					<div id='userGroup'></div>
+				</div>
+				<input type="submit" class="dialogSubmit" tabindex="-1">
+			</fieldset>
+		</form>
+	</div>
+
+	<script src="myFunctions.js"></script>
+</body>
+
+</html>

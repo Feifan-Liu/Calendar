@@ -1,0 +1,132 @@
+
+.stack{
+	display: block;
+	margin: auto;
+	width: 1200px;
+	border: 1px solid skyblue;
+	padding: 5px;
+	border-radius: 10px;
+	position: absolute;
+	top: 10px;
+	left: 230px;
+	cursor: default;
+}
+
+table, th, td{
+	width: 100%;
+	table-layout: fixed;
+	font-size: 17px;
+	border-collapse: collapse;
+	border:1px solid skyblue;
+}
+
+td{
+	vertical-align: top;
+	text-align: left;
+	height: 100px;
+	overflow: hidden;
+	max-width: 100px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.event:hover{
+	overflow: visible;
+	white-space: normal;
+	height: auto;
+	cursor: pointer;
+	color: blue;
+}
+
+ul {list-style-type: none;}
+.month {
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+	float: left;
+}
+
+.prev:hover{
+	color:blue;
+	cursor: pointer;
+}
+
+.next:hover{
+	color:blue;
+	cursor: pointer;
+}
+
+.month .next {
+    float: right;
+}
+
+.dialogSubmit{
+	position:absolute; 
+	top:-1000px;
+}
+
+.otherMonth{
+	color: lightgrey;
+}
+
+.currentDate{
+	background-color: lightgray;
+	color: blue;
+}
+
+.clickToShare:hover{
+	color:blue;
+	cursor: pointer;
+}
+
+.groupEvent{
+	border-collapse: collapse;
+	border:1px solid black;
+}
+
+.errormsg{
+	color: red;
+}
+
+.container{
+	width: 180px;
+	padding: 5px;
+	border: 1px solid black;
+    text-align: left;
+}
+
+.userinput{
+	width: 150px;
+}
+
+#panel {
+	text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+	padding: 10px;
+	width: 180px;
+	display: none;
+	z-index: 100;
+	float:left;
+}
+
+#deleteTag {
+	width: 30px;
+    height: 30px;
+	text-align: center;
+	background-color: red;
+	border-radius: 15px;
+}
